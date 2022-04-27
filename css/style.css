@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(198, 198, 198)
+}
+
+main{
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    padding: 8px 16px;
+    background:rgb(0, 136, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.product{
+    width: 150px;
+    height: 250px;
+    background:rgb(0, 136, 255);
+    margin: 15px;
+}
