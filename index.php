@@ -16,7 +16,7 @@
         </header>
         <section id="product-list">
             <div class="product">
-                <img src="https://a-static.mlcdn.com.br/280x210/fritadeira-eletrica-sem-oleo-air-fryer-nell-smart-preta-24l-com-timer/magazineluiza/222478900/2bad1a94a6d8f75b3f84e6f194680b83.jpg" alt="Fritadeira" width=150px height="150px">
+                <img src="https://a-static.mlcdn.com.br/618x463/controle-remoto-para-tv-philco-lelong/eletromassa/2874671827/4e6418407f869acc149138a57b937fce.jpg" alt="Fritadeira" width=150px height="150px">
                 <h3>Controle remoto de carro</h3>
                 <span>R$ 99,78</span>
             </div>
@@ -35,7 +35,7 @@
 
     <div class="modal" id="modalAddProduct"  onclick="closeModal(event)">
         <main>
-            <h1>Cadastrar produto<h1>
+            <h1>Cadastrar produto</h1>
             <form>
                 <label>Foto:</label><br>
                 <input class="full" type="text" placeholder="URL da foto" name="photo"/><br>
