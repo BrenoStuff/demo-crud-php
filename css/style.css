@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
-    background: rgb(198, 198, 198)
+    background: rgb(198, 198, 198);
 }
 
 main{
@@ -32,6 +33,16 @@ button{
     cursor: pointer;
 }
 
+input[type=submit]{
+    padding: 8px 16px;
+    background:rgb(0, 136, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 #product-list{
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +51,46 @@ button{
 
 .product{
     width: 150px;
-    height: 250px;
-    background:rgb(0, 136, 255);
+    height: auto;
     margin: 15px;
+}
+
+.product h3{
+    font-weight: bold;
+}
+
+.product span{
+    color:rgb(0, 136, 255);
+}
+
+.modal{
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: hwb(0 0% 100% / 0.245);
+}
+
+.modal main{
+    width: 550px;
+    height: auto;
+}
+
+.modal main form{
+    margin: 20px 0;
+}
+
+.modal main form input[type=text]{
+    margin: 3 0 15px 0;
+    padding: 5px; 
+    border-radius: 5px;
+    border: 1px solid #b2b2b2;
+    box-sizing: border-box;
+}
+
+.full{
+    width: 100%;
 }
