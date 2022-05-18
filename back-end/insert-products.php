@@ -25,5 +25,6 @@ try{
     echo "Insert of the product failed: " . $e->getMessage();
 }
 
+echo '<br> <a href="../">Home</a>';
 
 ?>
