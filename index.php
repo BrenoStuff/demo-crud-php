@@ -85,7 +85,7 @@
     <div class="modal" id="modalEditProduct" onclick="closeModal(event)">
 		<main>
             <h1>Edit Product</h1>
-            <form method="POST" action="backend/edit-product.php">
+            <form method="POST" action="back-end/edit-product.php">
                 <input type="hidden" name="id" value=""/>
 
                 <label>Photo:</label><br>

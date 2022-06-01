@@ -1,6 +1,6 @@
 <?php
 
-$id = $_id['id'];
+$id = $_POST['id'];
 $photo = $_POST['photo'];
 $title = $_POST['title'];
 $price = $_POST['price'];

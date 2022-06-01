@@ -16,17 +16,16 @@ if(!isset($_GET['id'])){
         $stmt->bindParam(':id', $id);
         $stmt->execute();
         if($stmt->rowCount()){
-            // echo "Deleted product successfully.";
-            header('Location: ../');
+            $result['success']['message'] = 'Produto deletado com sucesso!';
+            echo json_encode($result);   
         } else{
-            echo "Product not found.";
+            $result['success']['message'] = 'ID do produto não encontrado.';
+            echo json_encode($result);
         }
     } catch(PDOException $e) {
         echo "Error deleting product: " . $e->getMessage();
     }
 
 }
-
-echo '<br> <a href="../">Home</a>';
 
 ?>

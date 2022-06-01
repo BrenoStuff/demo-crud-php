@@ -58,11 +58,11 @@ button, input[type=submit]{
     background:rgb(0, 136, 255);
     color: #FFF;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .product .edit{
     right: 50px;
-    cursor: pointer;
 }
 
 .product span{

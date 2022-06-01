@@ -27,7 +27,7 @@
     <div class="modal" id="modalAddProduct"  onclick="closeModal(event)">
         <main>
             <h1>Cadastrar produto</h1>
-            <form method="POST" action="back-end\insert-products.php">
+            <form onsubmit="insertProduct(event)">
                 <label>Foto:</label><br>
                 <input class="full" type="text" placeholder="URL da foto..." name="photo"/><br>
 
@@ -45,7 +45,7 @@
     <div class="modal" id="modalEditProduct" onclick="closeModal(event)">
 		<main>
             <h1>Edit Product</h1>
-            <form method="POST" action="backend/edit-product.php">
+            <form onclick="editFormProduct(event)">
                 <input type="hidden" name="id" value=""/>
 
                 <label>Photo:</label><br>

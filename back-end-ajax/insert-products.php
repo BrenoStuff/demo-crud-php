@@ -20,12 +20,11 @@ try{
   $stmt->bindParam(':title', $title);
   $stmt->bindParam(':price', $price);
   $stmt->execute();
-  // echo "Created the product successfully.";
-  header('Location: ../');
+
+  $result['success']['message'] = 'Produto cadastrado com Sucesso!';
+  echo json_encode($result);
+
 } catch(PDOException $e) {
     echo "Insert of the product failed: " . $e->getMessage();
 }
-
-echo '<br> <a href="../">Home</a>';
-
 ?>

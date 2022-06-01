@@ -1,6 +1,6 @@
 <?php
 
-$id = $_id['id'];
+$id = $_POST['id'];
 $photo = $_POST['photo'];
 $title = $_POST['title'];
 $price = $_POST['price'];
@@ -14,12 +14,17 @@ $stmt->bindParam(':photo', $photo);
 $stmt->bindParam(':title', $title);
 $stmt->bindParam(':price', $price);
 $stmt->execute();
-// echo "Edited the product successfully.";
-header('Location: ../');
+
+if($stmt->rowCount()){
+    $result['success']['message'] = 'Produto editado com sucesso!';
+    echo json_encode($result);   
+} else{
+    $result['success']['message'] = 'ID do produto não encontrado.';
+    echo json_encode($result);
+}
+
 } catch(PDOException $e) {
     echo "Edit of the product failed: " . $e->getMessage();
 }
-
-echo '<br> <a href="../">Home</a>';
 
 ?>
